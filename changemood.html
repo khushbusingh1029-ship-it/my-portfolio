@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Board &#x1f308;</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            transition: background 0.5s ease, color 0, 5s ease;
+            height: 200%;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 2em;
+        }
+
+        .mood-btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            font-size: 1.1em;
+
+        }
+
+        .mood-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .happy {
+            background: #FFD93D;
+        }
+
+        .calm {
+            background: #00B4D8;
+        }
+
+        .creative {
+            background: #F72585;
+        }
+
+        .sad {
+            background: #6D6875;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #default:checked~.container {
+            background: rgb(255, 69, 69);
+            color: #000;
+        }
+
+        #happy:checked~.container {
+            background: rgb(253, 253, 137);
+            color: rgb(170, 170, 14);
+        }
+
+        #calm:checked~.container {
+            background: #CAF0F8;
+            color: #0077b6
+        }
+
+        #creative:checked~.container {
+            background: #FFD6E0;
+            color: #9A031E;
+        }
+
+        #sad:checked~.container {
+            background: #c3c2c2;
+            color: #3c3c3c;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.5s ease;
+            border-radius: 20px;
+        }
+
+        blockquote {
+            font-size: 1.5em;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="radio" name="mood" id="default" checked>
+    <input type="radio" name="mood" id="happy" checked>
+    <input type="radio" name="mood" id="calm" checked>
+    <input type="radio" name="mood" id="creative" checked>
+    <input type="radio" name="mood" id="sad" checked>
+    <div class="container">
+        <h1>&#x1F308; Choose Your Mood</h1>
+        <div>
+            <label for="happy" class="mood-btn happy">&#x1F604; Happy</label>
+            <label for="calm" class="mood-btn calm">&#x1F324; Calm</label>
+            <label for="creative" class="mood-btn creative">&#x1F3a8; Creative</label>
+            <label for="sad" class="mood-btn sad">&#x1F614; Sad</label>
+        </div>
+        <blockquote>&#x2728; "Your mood colors your world!" &#x2728;</blockquote>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+
+<!-- Navbar -->
+<nav class="flex justify-between items-center p-6 fixed w-full bg-black z-50">
+  <h1 class="font-bold text-lg">Khushbu</h1>
+  <ul class="flex gap-6 text-sm">
+    <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+    <li><a href="#about" class="hover:text-gray-400">About</a></li>
+    <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+  </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="min-h-screen flex items-center justify-center px-10">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left -->
+    <div>
+      <h2 class="text-5xl font-bold">Hi, I'm Khushbu</h2>
+      <p class="mt-4 text-gray-400">Web Developer</p>
+      <p class="mt-2 text-gray-500">I build modern and responsive websites using HTML, CSS, JavaScript and Tailwind.</p>
+    </div>
+
+    <!-- Right (Image) -->
+    <div class="flex justify-center ">
+      <img src="images/image.png" class=" h-96 rounded-full w-96 object-cover" />
+    </div>
+
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="min-h-screen px-10 py-20 bg-gray-900">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-400">
+      I am a passionate web developer who loves creating clean and user-friendly websites.
+      I have built projects like eCommerce websites and login pages.
+    </p>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="min-h-screen px-10 py-20">
+  <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <div class="bg-gray-900 p-5 rounded-xl">
+      <img src="images/flipkart.png" class="rounded mb-3" />
+      <h3 class="font-semibold">E-commerce Website</h3>
+      <p class="text-gray-400 text-sm mt-2">Online shopping UI with responsive design.</p>
+      <a href="flipkart.html" class="inline-block mt-3 border px-3 py-1 rounded">View</a>
+    </div>
+  <div class="bg-gray-900 p-5 rounded-xl">
+      <img src="images/youtube.png" class="rounded mb-3" />
+      <h3 class="font-semibold">YouTube UI Clone</h3>
+       <p class="text-gray-400 text-sm mt-2">
+            A responsive YouTube-inspired interface built using HTML, and CSS. 
+            It includes a modern layout with video thumbnails, sidebar, and clean design.
+        </p>
+      <a href="youtube.html" class="inline-block mt-3 border px-3 py-1 rounded">View</a>
+    </div>
+    <div class="bg-gray-900 p-5 rounded-xl">
+      <img src="images/netflix.png" class="rounded mb-3" />
+      <h3 class="font-semibold">Netflix UI Clone</h3>
+      <p class="text-gray-400 text-sm mt-2">
+  A Netflix-inspired homepage design with banners and movie sections. 
+  Built using HTML and CSS to create a visually appealing UI.
+</p>
+      <a href="netflix.jpg" class="inline-block mt-3 border px-3 py-1 rounded">View</a>
+    </div>
+    <div class="bg-gray-900 p-5 rounded-xl">
+      <img src="images/login page.png" class="rounded mb-3" />
+      <h3 class="font-semibold">Login Page</h3>
+      <p class="text-gray-400 text-sm mt-2">Simple login/signup UI design.</p>
+      <a href="login page.html" class="inline-block mt-3 border px-3 py-1 rounded">View</a>
+    </div>
+
+    <div class="bg-gray-900 p-5 rounded-xl">
+      <img src="images/change Mood.png" class="rounded mb-3" />
+      <h3 class="font-semibold">Mood App</h3>
+      <p class="text-gray-400 text-sm mt-2">Changes UI based on mood input.</p>
+      <a href="changemood.html" class="inline-block mt-3 border px-3 py-1 rounded">View</a>
+    </div>
+  
+
+    
+
+  </div>
+</section>
+
+</body>
+</html>

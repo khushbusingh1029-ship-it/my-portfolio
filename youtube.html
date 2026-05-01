@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+    }
+
+    body {
+      /* box-sizing: border-box; */
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main {
+      /* width: 100%; */
+      height: 100%;
+      display: grid;
+      grid-template-columns: 8vw 92vw;
+    }
+
+    /* box1  */
+    .box1 {
+      margin: 0;
+    }
+
+    header {
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+    }
+
+    header a {
+      margin: 5px;
+      margin-top: 20px;
+      text-decoration: none;
+      color: black;
+      font-size: 12px;
+    }
+
+    .a {
+      font-size: 20px;
+      bottom: 0%;
+    }
+
+    .a span {
+      display: flex;
+      font-size: 10px;
+      margin: 5px;
+    }
+
+    /* box2  */
+    .box2 {
+      margin: 0;
+    }
+
+    .first {
+      margin: 10px;
+      justify-content: space-around;
+      display: flex;
+    }
+
+    .first input {
+      padding: 10px;
+      width: 500px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+
+    .mice {
+      border-radius: 50%;
+      width: 30px;
+      background: rgb(235, 230, 230);
+      cursor: pointer;
+    }
+
+    .mice:hover {
+      background: rgb(10, 88, 88);
+      border-radius: 50%;
+      width: 30px;
+    }
+
+    .first span {
+      font-size: 15px;
+    }
+
+    .first button {
+      border-radius: 17px;
+      padding-left: 7px;
+      padding-right: 7px;
+      border: 1px solid rgb(185, 183, 183);
+      color: rgb(11, 55, 250);
+      background: white;
+    }
+
+    .first button:hover {
+      background: rgb(189, 223, 235);
+    }
+
+    /* sidebar  */
+    .youtube {
+      font-weight: bold;
+      font-size: 10em;
+    }
+
+    .youtube sup {
+      font-weight: 100;
+      font-size: 1em;
+
+    }
+
+    .second {
+      display: flex;
+      gap: 10px;
+      justify-content: space-around;
+    }
+
+    .second span {
+      background: rgb(231, 231, 231);
+      padding: 5px 10px 5px 10px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    /* box3  */
+    .box3 {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0%;
+    }
+
+    .intobox {
+      margin: 10px;
+      width: 350px;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      padding: 10px;
+      position: relative;
+    }
+
+    video,
+    iframe {
+      height: 200px;
+      object-fit: cover;
+      width: 330px;
+      border-radius: 14px;
+    }
+
+    .intobox:hover {
+      background: rgb(243, 213, 213);
+      border-radius: 12px;
+    }
+
+    .p {
+      font-size: 10px;
+    }
+
+    .logos {
+      font-size: 10px;
+      margin: 5px;
+    }
+
+    .logo img {
+      height: 25px;
+      border-radius: 50%;
+      width: 25px;
+      float: left;
+    }
+
+    @media (max-width:768px) {
+      .first input {
+        width: 150px;
+      }
+
+      .box1 {
+        display: none;
+
+      }
+
+      video,
+      iframe {
+        width: 80vw;
+        height: 60vh;
+      }
+
+      .intobox:hover {
+        background: none;
+        justify-content: center;
+      }
+
+      .second span {
+        font-size: 12px;
+
+      }
+
+      .box3 {
+        width: 100%;
+      }
+
+      .box2 {
+        position: sticky;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="box1">
+      <header>
+        <a href="#" class="a">...</a>
+        <a href="#" class="a"> 🏠 <span>Home</span></a>
+        <a href="#" class="a"> ▶️ <span>Shorts</span></a>
+        <a href="#" class="a"> 🔔 <span>Subscriptions</span></a>
+        <a href="#" class="a"> 👤 <span>You</span></a>
+
+        <a href="#"></a>
+      </header>
+    </div>
+    <div class="box2">
+      <nav>
+        <div class="first">
+          <span class="youtube">khushbuTube <sup>IN</sup>
+          </span>
+          <input type="text" placeholder="Search" /><span class="mice">🎤</span>
+          <button onclick="alert('hello ')">Sign in</button>
+
+        </div>
+        <div class="second">
+          <span>All</span>
+          <span>Movie</span>
+          <span>Playlist</span>
+          <span>Live</span>
+          <span>Music</span>
+          <span>Gaming</span>
+          <span>AutoCAD</span>
+          <span>Movie</span>
+          <span>Playlist</span>
+          <span>Live</span>
+          <span>Music</span>
+          <span>Gaming</span>
+          <span>AutoCAD</span>
+
+        </div>
+      </nav>
+      <div class="box3">
+       
+        <div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/oafxkMv4xnc?si=F456bzUuUI3YvmP_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Bairan Song</p>
+          <p class="p">3.2M view . 3 month ago</p>
+          <p class="logos">
+            <span class="logo"><img src="songs.png" alt="" /></span> songs only
+          </p>
+        </div>
+        <div class="intobox">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/my2rSIjdfGU?si=GKvMMyef7UOO1Vem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Kalank Movie in hindi</p>
+          <p class="p">1.8M view . 8 month ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> movie
+          </p>
+        </div>
+        <div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/vFphsbbqGxY?si=7_GlaPQdZNVxxgPj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Indian and Theka</p>
+          <p class="p">1.8M view . 1 month ago</p>
+          <p class="logos">
+            <span class="logo"><img src="flower.jpg" alt="" /></span> it's me
+          </p>
+        </div>
+        <div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/X3xGqeSXXdw?si=4Nqn-j5Hh3bvNShy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Homeless - Mr Bean </p>
+          <p class="p">1.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> Mr Bean
+          </p>
+        </div>
+        <div class="intobox">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2sH9Ya737co?si=92v_TLPHmw7ChLjR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Do Patti</p>
+          <p class="p">3.2M view . 2 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> movies
+          </p>
+        </div>
+        <div class="intobox">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfK5jpXcnK4?si=N1Khpum6htvngXzh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Khatron ke Khiladi Seasion</p>
+          <p class="p">2.2M view . 5 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="flower.jpg" alt="" /></span> Khatron ke Khiladi
+          </p>
+        </div>
+        <div class="intobox">
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WN1FhKMgeLU?si=qUFu-jO5W-mupC7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Rain Rain Go Away</p>
+          <p class="p">1.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="cartoon.jfif" alt="" /></span>cartoon
+          </p>
+        </div>
+        <div class="intobox">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/aRNfSqsgrgE?si=bRNS2YQw9yxhtiM-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Sheesha (Official Music)</p>
+          <p class="p">1.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="songs.png" alt="" /></span> Music Time
+          </p>
+        </div>
+        <div class="intobox">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2DLBCHdw_ZY?si=sUf3ymPOEbFgs00w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+          <p>Pal Pal Dil Ke Pass</p>
+          <p class="p">2.2M view . 8 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> Khushub
+            singh
+          </p>
+        </div>
+        <div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/1TQRM6k9UBo?si=4jgnFhggyzrVJ0Jz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Chiraiya WEB SERIES</p>
+          <p class="p">1.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> Series
+          </p>
+        </div>
+        <div class="intobox">
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/uH5iyWQvc2E?si=RUaHrgP7MyK3YQ_z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Yeh Rishta Kya Kehlata H</p>
+          <p class="p">3.2M view . 9 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> Khushub
+            singh
+          </p>
+        </div>
+        <div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/XFP77b1f0x4?si=PpKO9BDRFN6y4AWG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Naagin Drama Serial</p>
+          <p class="p">1.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> Serial
+          </p>
+        </div>
+        <div class="intobox">
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/W6M75xmRc5Y?si=AWq9sC9ooCfx_2qr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p> Parindey - Pehal Padaan </p>
+          <p class="p">2.2M view . 2 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="songs.png" alt="" /></span> Songs Time
+          </p>
+        </div>
+        <div class="intobox">
+          <iframe width="300" height="200" controls src="https://www.youtube.com/embed/VlPiVmYuoqw?si=sfjqCY8-j2bfMo4y"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <p>JavaScript Tutorial</p>
+          <p class="p">1.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="girls.jfif" alt="" /></span> Coading
+          </p>
+        </div>
+        <div class="intobox">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7YUiQOsZhUU?si=pMdRvZ7eLaTwQBO2"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <p>M Vir Hu ...</p>
+          <p class="p">1.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> movie
+          </p>
+        </div>
+        <div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/WglKFRu0FJs?si=_NxcSkJql0Rvc7qP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Kale Kaagz</p>
+          <p class="p">1.2M view . 2 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="songs.png" alt="" /></span> songs
+          </p>
+        </div>
+        <div class="intobox">
+         
+<iframe width="560" height="315" src="https://www.youtube.com/embed/afHc6fUEF-g?si=2ylDEkajBs9cLY27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Mind - Bloeing 16K HDR</p>
+          <p class="p">5.2M view . 3 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> movies
+          </p>
+        </div>
+         <div class="intobox">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/W8SfsWygXFU?si=79zxrfb_igxTxGnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <p>TheBest HEISTS Ever</p>
+          <p class="p">2.2M view . 3 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> movie
+          </p>
+        </div>
+        <div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/zAf_gwShRnk?si=ANg0ClugWZVJeyLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Dhurandhar2 full Movie</p>
+          <p class="p">5.2M view . 2 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="movie.jfif" alt="" /></span> Movie
+          </p>
+        </div><div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/5oH9Nr3bKfw?si=4wCHb-8TbpgFMCKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Tom & Jerry</p>
+          <p class="p">7.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="cartoon.jfif" alt="" /></span> cartoon
+          </p>
+        </div><div class="intobox">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/M_rH3Z_R6-U?si=bKaVXTi9smxDN7-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Ek Mota Hathi Ghumne</p>
+          <p class="p">1.2M view . 1 year ago</p>
+          <p class="logos">
+            <span class="logo"><img src="cartoon.jfif" alt="" /></span> cartoon
+          </p>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>

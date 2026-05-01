@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2f2f33;
+  display: flex;
+  margin: auto;
+}
+
+
+.login-box {
+  background-color: rgba(26, 22, 22, 0.4);
+  padding: 30px 40px;
+  border-radius: 10px;
+  max-width: 320px;
+  margin: auto;
+  color: white;
+  box-shadow: 0 0 15px rgba(26, 22, 22, 0.4);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+.login-box button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+
+.social-buttons .google,
+.social-buttons .facebook {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.social-buttons .google {
+  background-color: #db4437;
+}
+
+.social-buttons .facebook {
+  background-color: #4267B2;
+}
+p{
+  color: red;
+  font-size: 3.2mm;
+  bottom: 2px;
+}
+    </style>
+</head>
+<body>
+    <div class="login-box">
+      <h2>Login Here</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Email or Phone">
+
+        <label for="password">Password</label>
+        <input  type="password" id="password" placeholder="Password">
+
+        <button onclick="handleSubmit(event)" type="submit">Log In</button>
+<p id="output"></p>
+        <div class="social-buttons">
+          <button onclick="google()" class="google">Google</button>
+          <button onclick="facebook()" class="facebook">Facebook</button>
+        </div>
+      </form>
+    </div>
+
+
+  
+    <script>
+
+   function google(){
+    window.open("https://www.google.com", "blank");
+          }
+   function facebook(){
+    window.open("https://www.facebook.com", "blank");
+          }
+
+          function handleSubmit(event){
+let username = document.getElementById("username").value.trim();
+let password = document.getElementById("password").value.trim();
+let output = document.getElementById("output");
+if (username === "" || password === "") {
+event.preventDefault();
+output.innerHTML = "Please fill in username and password.";
+} else {
+output.innerHTML = "Login successful!";
+}
+          }
+          </script>
+</body>
+</html>
