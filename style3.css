@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+main {
+  height: 80vh;
+  width: 100%;
+  background-image: url(netflix.jpg);
+  inset: 0;
+  z-index: 1000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box {
+  background: rgba(10, 10, 10, 0.8);
+  color: white;
+  height: 80vh;
+  width: 100%;
+  z-index: 1000;
+  inset: 0;
+     
+}
+body{
+    background: black;
+}
+/* nav  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-top: 10px;
+}
+.logo {
+margin: 20px;
+  color: red;
+  font-size: 40px;
+  font-weight: 600;
+}
+nav .button{
+    display: flex;
+    margin: 10px;
+    
+} 
+nav button{
+    background: red;
+    margin: 10px;
+    color: white;
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+
+}
+nav select{
+   height: 40px;
+    width: 110px;
+     margin: 10px;
+    color: white;
+    background: transparent;
+    border: 2px solid rgb(89, 85, 85); 
+    border-radius: 5px;
+
+}
+nav select:focus{
+    border: 2px solid white;
+}
+nav select option{
+    color: black;
+}
+hr{
+  margin-top: 0%;
+    border: 1px solid rgb(126, 12, 65);
+    height: 3px;
+background: linear-gradient(90deg,rgb(70, 4, 15),rgb(231, 28, 62),rgb(56, 3, 12));
+}
+
+/* first  */
+.first{
+justify-content: center;
+text-align: center;
+align-items: center;
+width: 600px;
+margin: auto;
+}
+.first h1{
+font-size: 40px;
+font-weight: 600;
+margin-top: 100px;
+}
+.first p{
+    margin: 20px;
+}
+.first input{
+    width: 300px;
+    padding: 14px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgb(225, 218, 218);
+    border-radius: 5px;
+}
+.first button{
+     padding: 14px;
+     background: red;
+     color: white;
+     border: none; 
+     margin: 10px;
+     font-size: 17px;
+     font-weight: 600;
+     width: 150px;
+    border-radius: 5px;
+
+}
+/* images  */
+
+.imges {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  margin-left: 40px;
+  margin: 100px;
+  margin-top: 0%;
+}
+.img {
+  scroll-snap-align: start;
+  width: 100px;
+  height: 30vh;
+  flex-shrink: 0;
+  margin: 30px;
+  position: relative;
+  transition: 0.5s;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+.img:hover {
+  transform: scale(1.05);
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+}
+.img h1 {
+  position: absolute;
+  color: rgb(24, 20, 20);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: -1px;
+  bottom: 100px;
+  font-size: 70px;
+  font-weight: 750;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 1px white;
+}
+/* h2  */
+.coloum{
+    color: white;
+    margin: 80px;
+}
+@media (max-width:768px){
+    .coloum{
+        margin: 20px;
+    }
+    .second{
+        width: 300px;
+        height: 400px;
+    }
+}
+/* seconds  */
+.seconds{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.second{
+    width: 40vw;
+    height: 30vh;
+    border-radius: 12px;
+    margin: 5px;
+    padding: 20px;
+    background: linear-gradient(130deg, rgb(14, 14, 68), rgb(10, 10, 65),rgb(48, 5, 5));
+    position: relative;
+}
+.second h3{
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.second svg{
+    right: 20px;
+    bottom:20px;
+position: absolute;
+} 
+
+ .faq {
+  max-width: 1000px;
+  margin: auto;
+  color: #fff;
+  margin-top: 80px;
+}
+
+.faq h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+details {
+  background: #2d2d2d;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 30px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+/* remove default arrow */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* + icon */
+summary::after {
+  content: "+";
+  font-size: 2rem;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  transition: transform 0.2s;
+}
+
+/* rotate to × when open */
+details[open] summary::after {
+  transform: rotate(45deg);
+}
+details:hover{
+  background: rgb(61, 61, 61);
+}
+details p {
+  padding: 0 20px 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.h1 {
+  color: white;
+  font-size: 25px;
+  margin: 100px;
+  margin-bottom: 0%;
+  font-weight: 500;
+}
+.last{
+    justify-content: center;
+text-align: center;
+margin: 70px;
+bottom: 50px;
+}
+.last button{
+   padding: 14px;
+     background: red;
+     color: white;
+     border: none; 
+     margin: 10px;
+     font-size: 19px;
+     font-weight: 500;
+     width: 200px;
+    border-radius: 5px;
+}
+.last input{
+  width: 400px;
+    padding: 14px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgb(225, 218, 218);
+    border-radius: 5px;
+}
+@media (max-width:900px){
+    .last input{
+        width: 250px;
+    }
+    .seconds{
+        display:flex;
+        flex-direction: column;
+    }
+    .second{
+      width: 80vw;
+      height: 40vh;
+    }
+    input{
+        width: 250px;
+    }
+    .box{
+        height: auto;
+    }
+   
+    .main button,input, .last button,input{
+        width: auto;
+        height: auto;
+    }
+}
