@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Menu Click</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+.menu {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.menu li {
+    position: absolute;
+    list-style: none;
+    left: 37%;
+    top: 37%;
+    transform: translate(-4%, -7%);
+    transition: 0.5s;
+}
+
+.menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #6c5ce7;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Center Button */
+.toggle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #2d3436;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+/* Rotate button when active */
+.menu.active .toggle {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Animation when active */
+.menu.active li {
+    transform: rotate(calc(360deg / 5 * var(--i))) 
+               translate(80px)
+               rotate(calc(-360deg / 5 * var(--i)));
+}
+.bell{
+    position: absolute;
+    top: 1%;
+    left: 80%;
+    transform: translateY(-50%) translateX(-100%);
+}
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <div class="toggle" id="toggle">+</div>
+
+    <li style="--i:0;"><a href="#">🏠</a></li>
+    <li style="--i:1;"><a href="#">🔍</a></li>
+    <li style="--i:2;"><a href="#">❤️</a></li>
+    <li style="--i:3;" class="bell"><a href="#">🔔</a></li>
+    <li style="--i:4;"><a href="#">👤</a></li>
+</div>
+
+<script>
+    let toggle = document.getElementById("toggle");
+let menu = document.querySelector(".menu");
+
+toggle.onclick = function() {
+    menu.classList.toggle("active");
+}
+</script>
+</body>
+</html>
