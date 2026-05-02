@@ -1,0 +1,129 @@
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.logo {
+  color: blue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.first {
+  color: gray;
+  font-size: 14px;
+}
+div input {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 17px;
+  border: 1px solid rgb(204, 203, 203);
+  padding: 5px;
+}
+div input:focus,
+textarea:focus {
+  border: 1px solid rgb(85, 83, 83);
+  outline: none;
+}
+.cart {
+  font-size: 21px;
+  cursor: pointer;
+}
+.seller {
+  font-size: 21px;
+  cursor: pointer;
+}
+.option img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.option img:hover {
+  transform: scale(1.08);
+}
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 0%;
+  cursor: pointer;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.option p {
+  font-size: 20px;
+  text-align: center;
+}
+/* products  */
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  margin: 20px;
+}
+.product {
+  padding: 10px;
+  height: 350px;
+  width: 300px;
+}
+.product p {
+  margin: 5px;
+  font-size: 18px;
+
+}
+.product img:hover {
+  transform: scale(1.05);
+}
+.product img {
+  height: 250px;
+  width: 250px;
+  transition: transform 0.2s ease;
+  border-radius: 20px;
+}
+.discount {
+  color: rgb(85, 84, 84);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.rs {
+  font-size: 17px;
+  color: red;
+}
+.name {
+  font-size: 20px;
+}
+
+.ndu {
+  background: linear-gradient(
+    90deg,
+    white,
+    rgb(160, 248, 230),
+    rgb(125, 245, 219)
+  );
+  border-radius: 10px;
+  /* gap: 800px; */
+  justify-content: space-around;
+  margin: 10px;
+}
+.rating {
+  color: #555;
+  font-size: 11px;
+  font-size: 16px;
+}
+.rating span {
+  color: aliceblue;
+  background: rgb(13, 202, 69);
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+h2 {
+  margin: 20px;
+}
