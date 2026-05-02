@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood Theme Changer</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    transition: 0.5s;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 12px;
+border: 1px solid #333;
+
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 12px;
+border: 1px solid #333;
+}
+
+h2 {
+    margin-top: 30px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>How are you feeling today?</h1>
+
+        <input type="text" id="moodInput" placeholder="Type happy, sad, angry...">
+
+        <button onclick="changeMood()">Change Theme</button>
+
+        <h2 id="resultText"></h2>
+    </div>
+
+    <audio id="bgMusic" loop></audio>
+
+    <script >
+function changeMood() {
+    let mood = document.getElementById("moodInput").value.toLowerCase();
+    let result = document.getElementById("resultText");
+    let music = document.getElementById("bgMusic");
+
+    if (mood === "happy") {
+        document.body.style.background = "#FFD700";
+        document.body.style.color = "#000";
+        result.innerText = "You are feeling Happy 😊";
+        document.body.style.fontFamily = "Comic Sans MS";
+
+        music.src = "music1.mp3";
+        music.play();
+    }
+    else if (mood === "sad") {
+        document.body.style.background = "#2C3E50";
+        document.body.style.color = "#fff";
+        result.innerText = "You are feeling Sad 😢";
+        document.body.style.fontFamily = "Georgia";
+
+        music.src = "music.mp3";
+        music.play();
+    }
+    else if (mood === "angry") {
+        document.body.style.background = "#8B0000";
+        document.body.style.color = "#fff";
+        result.innerText = "You are feeling Angry 😡";
+        document.body.style.fontFamily = "Impact";
+
+        music.src = "music1.mp3";
+        music.play();
+    }
+    else if (mood === "relaxed") {
+        document.body.style.background = "#A8E6CF";
+        document.body.style.color = "#000";
+        result.innerText = "You are feeling Relaxed 😌";
+        document.body.style.fontFamily = "Verdana";
+
+        music.src = "music.mp3";
+        music.play();
+    }
+    else {
+        document.body.style.background = " #f8b1b1"; 
+        document.body.style.color = "#000";
+        result.innerText = "You are feeling " + mood + " 😐";
+        document.body.style.fontFamily = "Verdana";
+
+        music.pause();
+    }
+}
+    </script>
+</body>
+</html>

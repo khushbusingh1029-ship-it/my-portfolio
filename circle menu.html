@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Menu</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.circular-menu {
+    width: 400px;
+    height: 400px;
+    position: relative;
+   
+}
+ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+li{
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+#first  { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+#second { top: 20%; left: 85%; }
+#third  { top: 50%; left: 100%; transform: translate(-100%, -50%); }
+#fourth { top: 80%; left: 85%; }
+#fifth  { top: 100%; left: 50%; transform: translate(-50%, -100%); }
+#sixth  { top: 80%; left: 0%; }
+#seventh{ top: 50%; left: 0%; transform: translate(0, -50%); }
+#eighth { top: 20%; left: 0%; }
+a{
+    text-decoration: none;
+    color: #131212;
+    font-size: 18px;
+    background: rgb(236, 151, 151);
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+button {
+    position: absolute;
+top: 45%;
+left: 45%;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: none;
+font-size: 40px;
+background-color:rgb(231, 95, 95);
+color: white;
+cursor: pointer;
+}
+.circular-menu.active li {
+    opacity: 1;
+    transform: scale(1);
+}
+    </style>
+</head>
+<body>
+    <div class="circular-menu" id="menu">
+        <ul>
+            <li id="first"><a href="#">Home</a></li>
+            <li id="second"><a href="#">About</a></li>
+            <li id="third"><a href="#">Services</a></li>
+            <li id="fourth"><a href="#">Contact</a></li>
+            <li id="fifth"><a href="#">Feedback</a></li>
+            <li id="sixth"><a href="#">Cart</a></li>
+            <li id="seventh"><a href="#">Products</a></li>
+            <li id="eighth"><a href="#">Log in</a></li>
+        </ul>
+        <button id="menubar" onclick="menubar()">+</button>
+    </div>
+
+
+<script>
+   function menubar() {
+ document.getElementById("menu").classList.toggle("active");}
+</script>
+</body>
+</html>

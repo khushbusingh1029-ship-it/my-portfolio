@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageGallery</title>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+
+}
+        div{
+            position: relative;
+            width: 200px;
+            height: 200px;
+    animation: rotate 20s linear infinite;
+    transform-style: preserve-3d;
+        }
+        div span {
+            height: 100%;
+        position: absolute;
+transform-origin: center;
+            width: 100%;
+        }
+ img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+
+}
+
+    .img1 { transform: rotateY(0deg) translateZ(350px)  ; }
+    .img2 { transform: rotateY(36deg) translateZ(350px) ; }
+    .img3 { transform: rotateY(72deg) translateZ(350px) ; }
+    .img4 { transform: rotateY(108deg) translateZ(350px); }
+    .img5 { transform: rotateY(144deg) translateZ(350px); }
+    .img6 { transform: rotateY(180deg) translateZ(350px); }
+    .img7 { transform: rotateY(216deg) translateZ(350px); }
+    .img8 { transform: rotateY(252deg) translateZ(350px); }
+    .img9 { transform: rotateY(288deg) translateZ(350px); }
+    .img10 { transform: rotateY(324deg) translateZ(350px); }
+    .img11{ transform: rotateY(360deg) translateZ(350px); }
+     
+ @keyframes rotate{
+    from{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div>
+        <span class="img1"><img  src="https://th.bing.com/th/id/OIP.zBh2ifRv_30MSH1qfcW7rAHaEK?w=329&h=185&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></span>
+        <span class="img2"> <img  src="https://th.bing.com/th/id/OIP.xrL1hIRoxXbnK5sZCQIUfAHaEK?w=321&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></span>
+         <span class="img3"><img src="https://th.bing.com/th/id/OIP.unfpPFHXM2mp74CNppwOAgHaEK?w=232&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></span>
+        <span class="img4"> <img src="https://th.bing.com/th/id/OIP.IRjA167w_lnAOUInHMjOfAHaEK?w=251&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></span>
+        <span class="img5"> <img src="https://th.bing.com/th/id/OIP.XU_NgjUVEtB5fq43iUfzuQHaEL?w=320&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></span>
+         <span class="img6"><img src="https://th.bing.com/th/id/OIP.9r1FK45OyzvEPnZ4HZKcxQHaEo?w=301&h=188&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></span>
+         <span  class="img7"><img src="https://th.bing.com/th/id/OIP.y7vM1iSNi0jMLJ-aPtOY_AHaEK?w=333&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></span>
+     <span class="img8"><img src="https://th.bing.com/th/id/OIP.-gUEet9uEDGOCWocJzGuZQHaE7?w=277&h=185&c=7&r=0&o=7&pid=1.7&rm=3" alt=""></span>
+     <span class="img9"><img src="https://picsum.photos/id/1018/400/300" alt=""></span>
+     <span class="img10"><img src="https://picsum.photos/id/1024/400/300" alt=""></span>
+     <span class="img11"><img src="https://picsum.photos/id/1039/400/300" alt=""></span>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school form</title>
+  <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+    }
+    .card{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxZGFUWDJ-uFoHoDGPzft2XuJIHu3shhfXmg&s");
+        border-radius: 30px;
+        background-position: center;
+    }
+    form{
+         width: 60%;
+        height: 80%;
+        padding: 10%;
+        background: linear-gradient(45deg,rgb(238, 142, 142),rgb(157, 157, 243),pink,rgb(154, 236, 154));
+        border-radius: 30px;
+    }
+    label{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="password"], select{
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;}
+        p{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+  </style>
+</head>
+<body>
+    <div class="card">
+    <form action="submit.php" method="post">
+       <h1>Student Details</h1>
+        <label for="username">Student Name</label>
+<input type="text"><br> <br>
+        <label for="username">Student Address</label>
+
+<input type="password" placeholder="Address"><br><br>
+<label for="">Contact No.</label>
+<input type="text" placeholder="Contact No."><br><br>
+<select name="" id="">
+    <option value="class"> Select class</option>
+    <option value="class">class 1</option>
+    <option value="class">class 2</option>
+    <option value="class">class 3</option>
+    <option value="class">class 4</option>
+    <option value="class">class 5</option>
+</select> <br><br>
+<label for="gender">Gender</label><br>
+<label for="male">male</label>
+<input type="radio" name="gender" id="male">
+<label for="female">female</label>
+<input type="radio" name="gender" id="female"><br>
+<p>Select your subjects =></p>
+<label for="hindi">Hindi</label>
+<input type="checkbox"><br>
+<label for="english">English</label>
+<input type="checkbox"><br>
+<label for="math">Math</label>
+<input type="checkbox"><br>
+<label for="Sst.">Sst.</label>
+<input type="checkbox"><br><br>
+<button>Submit</button><br><br>
+    </form>
+    </div>
+</body>
+</html>
